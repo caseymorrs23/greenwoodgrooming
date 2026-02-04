@@ -3,21 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Greenwood Grooming | Pet & Show Grooming | Call (253) 385-2046</title>
+  <title>Greenwood Grooming | Professional Dog Grooming | Call (253) 385-2046</title>
 
   <!-- SEO -->
-  <meta name="description" content="Greenwood Grooming provides full-service pet grooming and show grooming. Specializing in long-haired (drop coated) dogs, poodles, and poodle mixes. Call or text (253) 385-2046 to schedule." />
+  <meta name="description" content="Greenwood Grooming provides full-service dog grooming with calm, individual attention—especially for anxious pups. Specializing in long-haired (drop coated) dogs, poodles, and poodle mixes. Call or text (253) 385-2046 to schedule." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://caseymorrs23.github.io/greenwoodgrooming/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Greenwood Grooming | Call (253) 385-2046" />
-  <meta property="og:description" content="Pet Grooming • Show Grooming. Calm, detail-forward grooms. Call or text to book." />
-  <meta property="og:image" content="assets/og.png" />
+  <meta property="og:description" content="Top-tier grooming with a calm, professional approach. Call or text to book." />
+  <meta property="og:image" content="assets/og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- LocalBusiness schema (add address/hours later for stronger local SEO) -->
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+
+  <!-- LocalBusiness schema (add street address/hours later for stronger local SEO) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -28,11 +33,11 @@
     "sameAs":["https://www.facebook.com/profile.php?id=61574876862510"],
     "areaServed":"Bonney Lake, WA",
     "priceRange":"$$",
-    "description":"Full-service pet grooming and show grooming. Specialties: long-haired (drop coated) dogs, poodles and poodle mixes."
+    "description":"Full-service dog grooming. Specialties: long-haired (drop coated) dogs, poodles and poodle mixes."
   }
   </script>
 
-  <!-- Fonts (Google Fonts) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Allura&display=swap" rel="stylesheet">
@@ -41,7 +46,7 @@
     :root{
       --ink:#101018;
       --muted:#5b6270;
-      --bg:#fff7fa;          /* blush */
+      --bg:#fff7fa;
       --card:#ffffff;
       --line:rgba(16,16,24,.10);
       --shadow:0 18px 50px rgba(16,16,24,.10);
@@ -64,6 +69,8 @@
     }
     a{color:inherit}
     .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+
+    /* Nav */
     .nav{
       position:sticky; top:0; z-index:50;
       background: rgba(255,247,250,.82);
@@ -71,18 +78,8 @@
       border-bottom:1px solid var(--line);
     }
     .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0}
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      font-weight:800;
-    }
-    .mark{
-      width:44px; height:44px; border-radius:14px;
-      background: linear-gradient(135deg, var(--pink2), rgba(255,255,255,.9));
-      border:1px solid rgba(16,16,24,.08);
-      box-shadow: 0 12px 24px rgba(16,16,24,.08);
-      display:flex; align-items:center; justify-content:center;
-      font-weight:900;
-    }
+    .brand{display:flex; align-items:center; gap:12px; font-weight:800}
+    .brand img{height:44px; width:44px; border-radius:14px; border:1px solid rgba(16,16,24,.08); box-shadow: 0 12px 24px rgba(16,16,24,.08)}
     .brand small{display:block; font-weight:600; color:var(--muted); margin-top:2px}
     .actions{display:flex; gap:10px; align-items:center}
     .btn{
@@ -111,36 +108,21 @@
       box-shadow: var(--shadow);
       overflow:hidden;
     }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap:0;
-    }
+    .hero-grid{display:grid; grid-template-columns: 1.05fr .95fr}
     @media (max-width: 980px){ .hero-grid{grid-template-columns:1fr} }
     .hero-left{
       padding:26px;
       background:
-        linear-gradient(180deg, rgba(16,16,24,.62), rgba(16,16,24,.55)),
-        url("assets/hero.png");
+        linear-gradient(180deg, rgba(16,16,24,.55), rgba(16,16,24,.55)),
+        url("assets/hero.jpg");
       background-size: cover;
       background-position:center;
       color:#fff;
       min-height: 420px;
       display:flex; flex-direction:column; justify-content:center;
     }
-    .script{
-      font-family: Allura, cursive;
-      font-size: 44px;
-      line-height: 1;
-      margin:0 0 6px 0;
-      letter-spacing: .2px;
-    }
-    .hero-left h1{
-      margin:0 0 10px 0;
-      font-size: clamp(26px, 3vw, 40px);
-      line-height:1.12;
-      letter-spacing:-.4px;
-    }
+    .script{font-family: Allura, cursive; font-size: 46px; line-height: 1; margin:0 0 6px 0}
+    .hero-left h1{margin:0 0 10px 0; font-size: clamp(26px, 3vw, 40px); line-height:1.12; letter-spacing:-.4px}
     .lead{margin:0 0 16px 0; max-width:62ch; color:rgba(255,255,255,.86); font-size:15px}
     .cta-row{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
     .pill{
@@ -155,7 +137,7 @@
       margin: 0 8px 10px 0;
     }
 
-    /* Booking */
+    /* Booking panel */
     .hero-right{padding:22px}
     .panel{
       background: var(--card);
@@ -174,7 +156,6 @@
       background: rgba(242,169,190,.18);
       font-weight:900;
     }
-    .phone a{text-decoration:none}
     label{display:block; font-size:12px; font-weight:800; color: var(--ink); margin-top:10px}
     input, select, textarea{
       width:100%;
@@ -196,6 +177,8 @@
     @media (max-width: 520px){ .grid2{grid-template-columns:1fr} }
     .panel .btn{width:100%; margin-top:12px}
     .subnote{margin:10px 0 0 0; color:var(--muted); font-size:12px}
+    .mini-ad{margin-top:12px; border-radius: 18px; overflow:hidden; border:1px solid rgba(16,16,24,.10); box-shadow: 0 12px 28px rgba(16,16,24,.08)}
+    .mini-ad img{width:100%; display:block}
 
     /* Sections */
     section{padding:18px 0}
@@ -214,39 +197,28 @@
     .card h3{margin:0 0 6px; font-size:16px}
     .card p{margin:0; color:var(--muted); font-size:13px}
 
-    /* Photo grid + lightbox */
-    .photos{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px}
-    @media (max-width: 980px){ .photos{grid-template-columns:1fr} }
-    .shot{
+    /* Service photo tiles */
+    .service-grid{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px}
+    @media (max-width: 980px){ .service-grid{grid-template-columns:1fr} }
+    .tile{
       border-radius: 22px;
       overflow:hidden;
       border:1px solid rgba(16,16,24,.10);
       background:#fff;
       box-shadow: 0 12px 28px rgba(16,16,24,.08);
-      cursor:pointer;
     }
-    .shot .frame{aspect-ratio: 4 / 3; background:#f2f3f6}
-    .shot img{width:100%; height:100%; object-fit:cover; display:block}
-    .shot .cap{padding:10px 12px; font-size:12px; font-weight:800; color:var(--muted)}
-    .hint{font-size:12px; color:var(--muted); margin-top:8px}
+    .tile .img{aspect-ratio: 4/3; background:#f2f3f6}
+    .tile img{width:100%; height:100%; object-fit:cover; display:block}
+    .tile .cap{padding:10px 12px; font-size:12px; font-weight:800; color:var(--muted)}
 
-    .lb{
-      position:fixed; inset:0; z-index:100;
-      background: rgba(16,16,24,.72);
-      display:none; align-items:center; justify-content:center;
-      padding:18px;
-    }
+    /* Gallery + lightbox */
+    .photos{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px}
+    @media (max-width: 980px){ .photos{grid-template-columns:1fr} }
+    .shot{cursor:pointer}
+    .lb{position:fixed; inset:0; z-index:100; background: rgba(16,16,24,.72); display:none; align-items:center; justify-content:center; padding:18px}
     .lb.open{display:flex}
-    .lb-inner{
-      max-width: 980px; width:100%;
-      background:#fff;
-      border-radius: 22px;
-      overflow:hidden;
-      box-shadow: 0 30px 80px rgba(0,0,0,.35);
-      border:1px solid rgba(255,255,255,.20);
-    }
+    .lb-inner{max-width: 980px; width:100%; background:#fff; border-radius: 22px; overflow:hidden; box-shadow: 0 30px 80px rgba(0,0,0,.35)}
     .lb-top{display:flex; justify-content:space-between; align-items:center; padding:12px 14px; border-bottom:1px solid rgba(16,16,24,.10)}
-    .lb-top strong{font-size:14px}
     .x{border:none; background:transparent; font-size:22px; cursor:pointer; line-height:1}
     .lb-img{background:#111; display:flex; align-items:center; justify-content:center}
     .lb-img img{max-width:100%; max-height: 74vh; width:auto; height:auto; display:block}
@@ -258,28 +230,16 @@
     blockquote p{margin:0 0 10px; color: var(--ink); font-size:13px}
     blockquote footer{color:var(--muted); font-weight:800; font-size:12px}
 
-    /* Footer */
+    /* Sticky mobile bar */
+    .sticky{position:fixed; left:0; right:0; bottom:0; z-index:70; background: rgba(255,247,250,.90); border-top:1px solid rgba(16,16,24,.10); backdrop-filter: blur(10px)}
+    .sticky-inner{max-width: var(--max); margin:0 auto; padding:10px 18px; display:flex; gap:10px}
+    .sticky .btn{flex:1}
+    @media (min-width: 980px){ .sticky{display:none} }
+
     footer{padding:24px 0 88px; border-top:1px solid rgba(16,16,24,.10); color:var(--muted)}
     .foot{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between}
     .foot a{text-decoration:underline; text-underline-offset: 3px}
-    .mini-ad{max-width: 360px; border-radius: 18px; overflow:hidden; border:1px solid rgba(16,16,24,.10); box-shadow: 0 12px 28px rgba(16,16,24,.08)}
-    .mini-ad img{width:100%; display:block}
-
-    /* Sticky mobile call bar */
-    .sticky{
-      position:fixed; left:0; right:0; bottom:0; z-index:70;
-      background: rgba(255,247,250,.90);
-      border-top:1px solid rgba(16,16,24,.10);
-      backdrop-filter: blur(10px);
-    }
-    .sticky-inner{
-      max-width: var(--max);
-      margin:0 auto;
-      padding:10px 18px;
-      display:flex; gap:10px;
-    }
-    .sticky .btn{flex:1}
-    @media (min-width: 980px){ .sticky{display:none} }
+    .note{font-size:12px; color:var(--muted); margin-top:8px}
   </style>
 </head>
 
@@ -288,7 +248,7 @@
     <div class="container">
       <div class="nav-inner">
         <div class="brand">
-          <div class="mark">GG</div>
+          <img src="assets/logo-512.png" alt="Greenwood Grooming logo">
           <div>
             Greenwood Grooming
             <small>Pet Grooming • Show Grooming</small>
@@ -314,10 +274,10 @@
               </div>
 
               <p class="script">Greenwood Grooming</p>
-              <h1>Calm, detail-forward grooming that photographs beautifully.</h1>
+              <h1>Top-tier grooming with a calm, professional approach.</h1>
               <p class="lead">
-                Full service grooming: bath, blow-dry, de-shedding, de-matting (as needed), nails, ears, and finishing details.
-                We provide loving, individual attention—especially for anxious pups—and tailor every groom to coat type and lifestyle.
+                Full service grooming for your dog: grooming, blow-dry, de-shedding, de-matting (as needed), nails, ears, and finishing details.
+                We’re dedicated to patient, individual attention—especially for anxious pups.
               </p>
 
               <div class="cta-row">
@@ -379,7 +339,7 @@
                 </form>
               </div>
 
-              <div class="mini-ad" style="margin-top:12px" aria-label="Brand card">
+              <div class="mini-ad" aria-label="Brand card">
                 <img src="assets/ad-card.png" alt="Greenwood Grooming ad card">
               </div>
             </div>
@@ -392,51 +352,62 @@
       <div class="container">
         <div class="section-title">
           <h2>Services</h2>
-          <p>High-quality grooming built around coat health, comfort, and a clean finish that holds up between visits.</p>
+          <p>Professional grooming built around coat health, comfort, and a clean finish that holds up between visits.</p>
         </div>
 
         <div class="cards3">
           <div class="card">
             <h3>Full-Service Grooming</h3>
-            <p>Grooming, blow-dry, de-shedding, de-matting (as needed), nails, ears, and finishing details.</p>
+            <p>Bath, blow-dry, de-shedding, de-matting (as needed), nails, ears, and finishing details.</p>
           </div>
           <div class="card">
             <h3>Long-Haired & Drop Coats</h3>
-            <p>Controlled brushing and finishing for coats that need extra care to look their best.</p>
+            <p>Special care for coats that need controlled brushing and clean finishing.</p>
           </div>
           <div class="card">
             <h3>Signature Doodle Clip</h3>
-            <p>A polished doodle finish with tidy feet, balanced length, and clean face work.</p>
+            <p>Polished doodle finish with tidy feet, balanced length, and clean face work.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:12px" class="service-grid">
+          <div class="tile">
+            <div class="img"><img src="assets/service-1.jpg" alt="Professional grooming service photo" loading="lazy"></div>
+            <div class="cap">Coat prep • Clean finish</div>
+          </div>
+          <div class="tile">
+            <div class="img"><img src="assets/service-2.jpg" alt="Poodle mix dogs after grooming" loading="lazy"></div>
+            <div class="cap">Poodles & mixes • Signature looks</div>
+          </div>
+          <div class="tile">
+            <div class="img"><img src="assets/collage.jpg" alt="Grooming collage" loading="lazy"></div>
+            <div class="cap">Consistent results • Professional presentation</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section aria-label="Photos">
+    <section aria-label="Grooming photos">
       <div class="container">
         <div class="section-title">
           <h2>Grooming photos</h2>
-          <p>Click to enlarge. For a premium look, use well-lit “after” photos with clean backgrounds.</p>
+          <p>Tap to enlarge. These images are optimized to display cleanly on web (consistent crop, no stretching).</p>
         </div>
 
         <div class="photos">
-          <div class="shot" data-caption="Clean finish • Coat health" data-img="assets/photo-1.png">
-            <div class="frame"><img src="assets/photo-1.png" alt="Groomed dog photo" loading="lazy"></div>
+          <div class="tile shot" data-caption="Clean finish • Coat health" data-img="assets/gallery-1.jpg">
+            <div class="img"><img src="assets/gallery-1.jpg" alt="Groomed dog photo" loading="lazy"></div>
             <div class="cap">Clean finish • Coat health</div>
           </div>
-
-          <div class="shot" data-caption="Calm handling • Happy pickup" data-img="assets/photo-2.png">
-            <div class="frame"><img src="assets/photo-2.png" alt="Happy dog photo" loading="lazy"></div>
-            <div class="cap">Calm handling • Happy pickup</div>
+          <div class="tile shot" data-caption="Happy pickup • Calm handling" data-img="assets/gallery-2.jpg">
+            <div class="img"><img src="assets/gallery-2.jpg" alt="Happy dog photo" loading="lazy"></div>
+            <div class="cap">Happy pickup • Calm handling</div>
           </div>
-
-          <div class="shot" data-caption="Replace with your best AFTER photo" data-img="assets/ad-card.png">
-            <div class="frame"><img src="assets/ad-card.png" alt="Greenwood Grooming brand card" loading="lazy"></div>
-            <div class="cap">Add a high-res “after” photo</div>
+          <div class="tile shot" data-caption="Show-ready detail • Coat control" data-img="assets/gallery-3.jpg">
+            <div class="img"><img src="assets/gallery-3.jpg" alt="Groomed toy poodle style photo" loading="lazy"></div>
+            <div class="cap">Show-ready detail • Coat control</div>
           </div>
         </div>
-
-        <div class="hint">Tip: swap /assets/photo-1.png, /assets/photo-2.png, and the third tile with your best groom “after” photos for the biggest perceived-quality lift.</div>
       </div>
     </section>
 
@@ -444,27 +415,28 @@
       <div class="container">
         <div class="section-title">
           <h2>Client reviews</h2>
-          <p>Short, specific, and quality-focused—exactly what premium clients respond to.</p>
+          <p>Replace these sample testimonials with your real client quotes when you’re ready.</p>
         </div>
 
         <div class="quotes">
           <blockquote>
-            <p>“Cleanest groom we’ve had. Even coat, perfect face work, and the finish looked great in photos.”</p>
-            <footer>— Poodle mix owner</footer>
+            <p>“The finish was clean and balanced, and our dog was calm at pickup. You can tell this is professional grooming.”</p>
+            <footer>— Sample testimonial</footer>
           </blockquote>
           <blockquote>
-            <p>“Our dog gets anxious and they handled him patiently. No rushing—just calm, professional grooming.”</p>
-            <footer>— First-time client</footer>
+            <p>“We asked for a tidy doodle clip and it came out exactly right—great shape, neat feet, and even length.”</p>
+            <footer>— Sample testimonial</footer>
           </blockquote>
           <blockquote>
-            <p>“The doodle clip was exactly what we asked for: balanced length, tidy feet, and a polished silhouette.”</p>
-            <footer>— Doodle owner</footer>
+            <p>“Our pup gets anxious and they handled him patiently. No rushing—just a calm process and a great result.”</p>
+            <footer>— Sample testimonial</footer>
           </blockquote>
           <blockquote>
-            <p>“Great communication and consistent quality. We keep coming back because the finish holds up.”</p>
-            <footer>— Returning client</footer>
+            <p>“Coat looked healthy and the groom held up well between visits. Great communication and consistent quality.”</p>
+            <footer>— Sample testimonial</footer>
           </blockquote>
         </div>
+        <div class="note">Tip: copy/paste real client texts here (even first name + breed) to maximize trust.</div>
       </div>
     </section>
 
@@ -489,10 +461,11 @@
           <div>
             <strong style="color:var(--ink)">Greenwood Grooming</strong><br>
             <span>Pet Grooming • Show Grooming</span><br>
-            <span>Phone: <a href="tel:2533852046">(253) 385-2046</a></span>
+            <span>Phone: <a href="tel:2533852046">(253) 385-2046</a></span><br>
+            <span><a href="https://www.facebook.com/profile.php?id=61574876862510" target="_blank" rel="noopener">Facebook</a></span>
           </div>
           <div>
-            <a href="https://www.facebook.com/profile.php?id=61574876862510" target="_blank" rel="noopener">Facebook</a>
+            <img src="assets/logo-512.png" alt="Greenwood Grooming logo" style="height:54px; width:54px; border-radius:16px; border:1px solid rgba(16,16,24,.10)">
           </div>
         </div>
       </div>
