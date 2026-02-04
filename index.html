@@ -3,565 +3,546 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Greenwood Grooming | Dog Grooming, Doodle Clips, Daycare & Boarding | 253-385-2046</title>
+  <title>Greenwood Grooming | Pet & Show Grooming | Call (253) 385-2046</title>
 
   <!-- SEO -->
-  <meta name="description" content="Greenwood Grooming provides full-service dog grooming, de-shedding, de-matting, nails and ears, plus doggie daycare and boarding. Long-haired coats, poodles and doodles (signature doodle clip). Call or text 253-385-2046 to schedule." />
+  <meta name="description" content="Greenwood Grooming provides full-service pet grooming and show grooming. Specializing in long-haired (drop coated) dogs, poodles, and poodle mixes. Call or text (253) 385-2046 to schedule." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
-  <link rel="canonical" href="https://greenwood-grooming.com/" />
+  <link rel="canonical" href="https://caseymorrs23.github.io/greenwoodgrooming/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Greenwood Grooming | Book by Phone (253) 385-2046" />
-  <meta property="og:description" content="Top-tier grooming, doodle clips, daycare & boarding. Call or text 253-385-2046." />
-  <meta property="og:url" content="https://greenwood-grooming.com/" />
+  <meta property="og:title" content="Greenwood Grooming | Call (253) 385-2046" />
+  <meta property="og:description" content="Pet Grooming • Show Grooming. Calm, detail-forward grooms. Call or text to book." />
   <meta property="og:image" content="assets/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- LocalBusiness schema (add street address if you want local-map SEO) -->
+  <!-- LocalBusiness schema (add address/hours later for stronger local SEO) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Greenwood Grooming",
-    "url": "https://greenwood-grooming.com/",
-    "telephone": "+1-253-385-2046",
-    "description": "Full-service grooming plus doggie daycare and boarding. Specialties: long-haired (drop coated) dogs, poodles, and poodle-mixes. Signature doodle clip available.",
-    "sameAs": ["https://www.facebook.com/profile.php?id=61574876862510"],
-    "areaServed": "Bonney Lake, WA and nearby",
-    "priceRange": "$$"
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Greenwood Grooming",
+    "telephone":"+1-253-385-2046",
+    "url":"https://caseymorrs23.github.io/greenwoodgrooming/",
+    "sameAs":["https://www.facebook.com/profile.php?id=61574876862510"],
+    "areaServed":"Bonney Lake, WA",
+    "priceRange":"$$",
+    "description":"Full-service pet grooming and show grooming. Specialties: long-haired (drop coated) dogs, poodles and poodle mixes."
   }
   </script>
 
+  <!-- Fonts (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Allura&display=swap" rel="stylesheet">
+
   <style>
     :root{
-      --bg:#0b0f14;
-      --card:#101826;
-      --muted:#9fb0c6;
-      --text:#e9f0ff;
-      --brand:#f6b6c8;
-      --brand2:#7dd3fc;
-      --line:rgba(255,255,255,.10);
-      --shadow:0 14px 40px rgba(0,0,0,.45);
-      --radius:18px;
+      --ink:#101018;
+      --muted:#5b6270;
+      --bg:#fff7fa;          /* blush */
+      --card:#ffffff;
+      --line:rgba(16,16,24,.10);
+      --shadow:0 18px 50px rgba(16,16,24,.10);
+      --pink:#f2a9be;
+      --pink2:#f7c5d3;
+      --btn:#111116;
       --max:1120px;
+      --radius:20px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      background: radial-gradient(1200px 600px at 15% 0%, rgba(246,182,200,.14), transparent 55%),
-                  radial-gradient(1000px 600px at 90% 10%, rgba(125,211,252,.12), transparent 55%),
-                  var(--bg);
-      color:var(--text);
-      line-height:1.45;
+      font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color:var(--ink);
+      background:
+        radial-gradient(1200px 520px at 15% 0%, rgba(242,169,190,.25), transparent 55%),
+        radial-gradient(1200px 520px at 85% 10%, rgba(247,197,211,.24), transparent 55%),
+        var(--bg);
     }
-    a{color:inherit; text-decoration:none}
+    a{color:inherit}
     .container{max-width:var(--max); margin:0 auto; padding:0 18px}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-
-    /* Nav */
     .nav{
       position:sticky; top:0; z-index:50;
-      background: rgba(11,15,20,.78);
+      background: rgba(255,247,250,.82);
       backdrop-filter: blur(10px);
       border-bottom:1px solid var(--line);
     }
-    .nav-inner{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px 0; gap:12px;
-    }
+    .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0}
     .brand{
-      display:flex; align-items:center; gap:10px;
-      font-weight:950; letter-spacing:.2px;
+      display:flex; align-items:center; gap:12px;
+      font-weight:800;
     }
-    .logo{
-      width:38px; height:38px; border-radius:12px;
-      background: linear-gradient(135deg, rgba(246,182,200,.95), rgba(125,211,252,.85));
+    .mark{
+      width:44px; height:44px; border-radius:14px;
+      background: linear-gradient(135deg, var(--pink2), rgba(255,255,255,.9));
+      border:1px solid rgba(16,16,24,.08);
+      box-shadow: 0 12px 24px rgba(16,16,24,.08);
       display:flex; align-items:center; justify-content:center;
-      color:#111; font-weight:950;
-      box-shadow: 0 10px 26px rgba(0,0,0,.35);
+      font-weight:900;
     }
-    .nav-actions{display:flex; gap:10px; align-items:center}
+    .brand small{display:block; font-weight:600; color:var(--muted); margin-top:2px}
+    .actions{display:flex; gap:10px; align-items:center}
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
-      padding:12px 14px;
+      padding:11px 14px;
       border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      font-weight:900;
-      cursor:pointer;
-      transition: transform .12s ease, background .12s ease, border-color .12s ease;
-      white-space:nowrap;
+      border:1px solid rgba(16,16,24,.14);
+      background: rgba(255,255,255,.7);
+      font-weight:800;
+      text-decoration:none;
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
     }
-    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.07)}
+    .btn:hover{transform: translateY(-1px); box-shadow: 0 12px 24px rgba(16,16,24,.10)}
     .btn-primary{
-      border-color: rgba(246,182,200,.55);
-      background: linear-gradient(135deg, rgba(246,182,200,.95), rgba(125,211,252,.65));
-      color:#071018;
-      box-shadow: 0 14px 34px rgba(246,182,200,.18);
-    }
-    .btn-outline{background:transparent; border-color: rgba(255,255,255,.18);}
-
-    /* Layout */
-    section{padding:18px 0}
-    .card{
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(16,24,38,.62);
-      box-shadow: var(--shadow);
-      overflow:hidden;
+      border-color: rgba(16,16,24,.12);
+      background: linear-gradient(135deg, var(--pink), var(--pink2));
+      color: var(--btn);
     }
 
     /* Hero */
-    .hero{padding:42px 0 18px;}
+    .hero{padding:34px 0 18px}
+    .hero-shell{
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,.78), rgba(255,255,255,.90));
+      border: 1px solid rgba(16,16,24,.10);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
     .hero-grid{
       display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:18px;
-      align-items:stretch;
+      grid-template-columns: 1.05fr .95fr;
+      gap:0;
     }
-    @media (max-width: 920px){ .hero-grid{grid-template-columns:1fr;} }
+    @media (max-width: 980px){ .hero-grid{grid-template-columns:1fr} }
     .hero-left{
       padding:26px;
-      min-height: 400px;
-      display:flex; flex-direction:column; justify-content:center;
       background:
-        linear-gradient(180deg, rgba(16,24,38,.88), rgba(16,24,38,.78)),
+        linear-gradient(180deg, rgba(16,16,24,.62), rgba(16,16,24,.55)),
         url("assets/hero.png");
       background-size: cover;
-      background-position: center;
+      background-position:center;
+      color:#fff;
+      min-height: 420px;
+      display:flex; flex-direction:column; justify-content:center;
     }
-    .pill{
-      display:inline-flex; align-items:center; gap:8px;
-      font-size:12px;
-      padding:6px 10px;
-      border:1px solid rgba(246,182,200,.35);
-      border-radius:999px;
-      background: rgba(246,182,200,.10);
-      color: rgba(255,255,255,.92);
-      font-weight:900;
-      margin-right:8px;
-      margin-bottom:10px;
+    .script{
+      font-family: Allura, cursive;
+      font-size: 44px;
+      line-height: 1;
+      margin:0 0 6px 0;
+      letter-spacing: .2px;
     }
-    h1{
+    .hero-left h1{
       margin:0 0 10px 0;
-      font-size: clamp(28px, 3.2vw, 44px);
+      font-size: clamp(26px, 3vw, 40px);
       line-height:1.12;
       letter-spacing:-.4px;
     }
-    .sub{
-      margin:0 0 18px 0;
-      color: var(--muted);
-      font-size: 16px;
-      max-width: 60ch;
-    }
+    .lead{margin:0 0 16px 0; max-width:62ch; color:rgba(255,255,255,.86); font-size:15px}
     .cta-row{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
-    .trust{margin-top:14px; display:flex; flex-wrap:wrap; gap:8px}
-    .tag{
-      font-size:12px;
-      border:1px solid rgba(255,255,255,.14);
+    .pill{
+      display:inline-flex; align-items:center;
       padding:6px 10px;
       border-radius:999px;
-      color: rgba(233,240,255,.88);
-      background: rgba(255,255,255,.04);
-      font-weight:900;
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.10);
+      color: rgba(255,255,255,.90);
+      font-weight:800;
+      font-size:12px;
+      margin: 0 8px 10px 0;
     }
 
-    /* Booking card */
-    .book{padding:18px; display:flex; flex-direction:column; gap:14px;}
-    .book h2{margin:0; font-size:18px; letter-spacing:-.2px}
-    .book p{margin:0; color:var(--muted); font-size:14px}
-    .big-phone{
-      font-size:22px; font-weight:950;
-      display:flex; align-items:center; gap:10px;
-      padding:12px 14px;
-      border-radius:14px;
-      border:1px solid rgba(246,182,200,.30);
-      background: rgba(246,182,200,.10);
+    /* Booking */
+    .hero-right{padding:22px}
+    .panel{
+      background: var(--card);
+      border:1px solid rgba(16,16,24,.10);
+      border-radius: 22px;
+      box-shadow: 0 12px 30px rgba(16,16,24,.08);
+      padding:18px;
     }
-    label{font-size:12px; font-weight:950; color: rgba(233,240,255,.88)}
+    .panel h2{margin:0 0 8px 0; font-size:18px}
+    .panel p{margin:0 0 12px 0; color:var(--muted); font-size:13px}
+    .phone{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      padding:12px 14px;
+      border-radius: 16px;
+      border:1px solid rgba(16,16,24,.10);
+      background: rgba(242,169,190,.18);
+      font-weight:900;
+    }
+    .phone a{text-decoration:none}
+    label{display:block; font-size:12px; font-weight:800; color: var(--ink); margin-top:10px}
     input, select, textarea{
       width:100%;
       margin-top:6px;
       padding:12px 12px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.04);
-      color: var(--text);
+      border-radius: 14px;
+      border:1px solid rgba(16,16,24,.14);
+      background: rgba(255,255,255,.92);
+      font-family: inherit;
+      font-size:14px;
       outline:none;
     }
     textarea{min-height:92px; resize:vertical}
     input:focus, select:focus, textarea:focus{
-      border-color: rgba(125,211,252,.50);
-      box-shadow: 0 0 0 4px rgba(125,211,252,.10);
+      border-color: rgba(242,169,190,.65);
+      box-shadow: 0 0 0 4px rgba(242,169,190,.22);
     }
     .grid2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
-    @media (max-width: 920px){ .grid2{grid-template-columns:1fr;} }
-    .help{font-size:12px; color: rgba(233,240,255,.72)}
+    @media (max-width: 520px){ .grid2{grid-template-columns:1fr} }
+    .panel .btn{width:100%; margin-top:12px}
+    .subnote{margin:10px 0 0 0; color:var(--muted); font-size:12px}
 
-    /* Section heading */
-    .section-title{
-      display:flex; align-items:flex-end; justify-content:space-between;
-      gap:12px; margin-bottom:12px;
-    }
-    .section-title h2{margin:0; font-size:22px; letter-spacing:-.2px}
-    .section-title p{margin:0; color: var(--muted); font-size:14px; max-width:68ch}
-
-    /* Cards */
-    .cards3{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px;}
+    /* Sections */
+    section{padding:18px 0}
+    .section-title{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin: 14px 0 12px}
+    .section-title h2{margin:0; font-size:22px}
+    .section-title p{margin:0; color:var(--muted); font-size:13px; max-width:70ch}
+    .cards3{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px}
     @media (max-width: 980px){ .cards3{grid-template-columns:1fr} }
-    .service{
+    .card{
+      background: var(--card);
+      border:1px solid rgba(16,16,24,.10);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 26px rgba(16,16,24,.06);
       padding:16px;
-      border-radius: var(--radius);
-      border:1px solid var(--line);
-      background: rgba(16,24,38,.55);
     }
-    .service h3{margin:0 0 6px 0; font-size:16px}
-    .service p{margin:0; color: var(--muted); font-size:14px}
+    .card h3{margin:0 0 6px; font-size:16px}
+    .card p{margin:0; color:var(--muted); font-size:13px}
 
-    /* Gallery */
-    .gallery{display:grid; grid-template-columns: 1fr 1fr; gap:12px;}
-    @media (max-width: 980px){ .gallery{grid-template-columns:1fr} }
-    figure{margin:0}
+    /* Photo grid + lightbox */
+    .photos{display:grid; grid-template-columns: repeat(3, 1fr); gap:12px}
+    @media (max-width: 980px){ .photos{grid-template-columns:1fr} }
     .shot{
-      position:relative;
-      border-radius: var(--radius);
+      border-radius: 22px;
       overflow:hidden;
-      border:1px solid var(--line);
-      background:#0f1622;
-      min-height: 240px;
+      border:1px solid rgba(16,16,24,.10);
+      background:#fff;
+      box-shadow: 0 12px 28px rgba(16,16,24,.08);
+      cursor:pointer;
     }
+    .shot .frame{aspect-ratio: 4 / 3; background:#f2f3f6}
     .shot img{width:100%; height:100%; object-fit:cover; display:block}
-    .cap{
-      position:absolute; left:12px; right:12px; bottom:12px;
-      padding:10px 12px;
-      border-radius: 14px;
-      background: rgba(11,15,20,.62);
-      backdrop-filter: blur(8px);
-      border:1px solid rgba(255,255,255,.12);
-      font-size:13px;
-      color: rgba(233,240,255,.92);
-      font-weight:900;
+    .shot .cap{padding:10px 12px; font-size:12px; font-weight:800; color:var(--muted)}
+    .hint{font-size:12px; color:var(--muted); margin-top:8px}
+
+    .lb{
+      position:fixed; inset:0; z-index:100;
+      background: rgba(16,16,24,.72);
+      display:none; align-items:center; justify-content:center;
+      padding:18px;
     }
+    .lb.open{display:flex}
+    .lb-inner{
+      max-width: 980px; width:100%;
+      background:#fff;
+      border-radius: 22px;
+      overflow:hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.20);
+    }
+    .lb-top{display:flex; justify-content:space-between; align-items:center; padding:12px 14px; border-bottom:1px solid rgba(16,16,24,.10)}
+    .lb-top strong{font-size:14px}
+    .x{border:none; background:transparent; font-size:22px; cursor:pointer; line-height:1}
+    .lb-img{background:#111; display:flex; align-items:center; justify-content:center}
+    .lb-img img{max-width:100%; max-height: 74vh; width:auto; height:auto; display:block}
 
     /* Reviews */
-    .quotes{display:grid; grid-template-columns: 1fr 1fr; gap:12px;}
+    .quotes{display:grid; grid-template-columns:1fr 1fr; gap:12px}
     @media (max-width: 980px){ .quotes{grid-template-columns:1fr} }
-    blockquote{
-      margin:0;
-      padding:16px;
-      border-radius: var(--radius);
-      border:1px solid var(--line);
-      background: rgba(16,24,38,.55);
-    }
-    blockquote p{margin:0 0 10px 0; color: rgba(233,240,255,.92)}
-    blockquote footer{color: var(--muted); font-weight:900; font-size:13px}
+    blockquote{margin:0; padding:16px; border-radius: var(--radius); border:1px solid rgba(16,16,24,.10); background:#fff; box-shadow: 0 10px 26px rgba(16,16,24,.06)}
+    blockquote p{margin:0 0 10px; color: var(--ink); font-size:13px}
+    blockquote footer{color:var(--muted); font-weight:800; font-size:12px}
 
     /* Footer */
-    footer{padding:26px 0 90px; border-top:1px solid var(--line); color: rgba(233,240,255,.80)}
+    footer{padding:24px 0 88px; border-top:1px solid rgba(16,16,24,.10); color:var(--muted)}
     .foot{display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between}
-    .foot small{color: var(--muted)}
+    .foot a{text-decoration:underline; text-underline-offset: 3px}
+    .mini-ad{max-width: 360px; border-radius: 18px; overflow:hidden; border:1px solid rgba(16,16,24,.10); box-shadow: 0 12px 28px rgba(16,16,24,.08)}
+    .mini-ad img{width:100%; display:block}
 
-    /* Sticky Mobile Bar */
+    /* Sticky mobile call bar */
     .sticky{
-      position:fixed; left:0; right:0; bottom:0; z-index:80;
-      background: rgba(11,15,20,.80);
+      position:fixed; left:0; right:0; bottom:0; z-index:70;
+      background: rgba(255,247,250,.90);
+      border-top:1px solid rgba(16,16,24,.10);
       backdrop-filter: blur(10px);
-      border-top:1px solid var(--line);
     }
     .sticky-inner{
       max-width: var(--max);
-      margin: 0 auto;
-      padding: 10px 18px;
-      display:flex; gap:10px; align-items:center; justify-content:space-between;
+      margin:0 auto;
+      padding:10px 18px;
+      display:flex; gap:10px;
     }
     .sticky .btn{flex:1}
-    @media (min-width: 920px){ .sticky{display:none;} }
+    @media (min-width: 980px){ .sticky{display:none} }
   </style>
 </head>
 
 <body>
-  <a class="sr-only" href="#booking">Skip to booking</a>
-
-  <header class="nav" role="banner">
+  <header class="nav">
     <div class="container">
       <div class="nav-inner">
-        <div class="brand" aria-label="Greenwood Grooming">
-          <div class="logo" aria-hidden="true">GG</div>
+        <div class="brand">
+          <div class="mark">GG</div>
           <div>
-            Greenwood Grooming<br/>
-            <span style="font-size:12px; font-weight:900; color: rgba(233,240,255,.70);">Grooming • Daycare • Boarding</span>
+            Greenwood Grooming
+            <small>Pet Grooming • Show Grooming</small>
           </div>
         </div>
-
-        <div class="nav-actions">
-          <a class="btn btn-outline" href="tel:2533852046" aria-label="Call Greenwood Grooming at 253-385-2046">Call</a>
-          <a class="btn btn-primary" href="#booking" aria-label="Book an appointment">Book Appointment</a>
+        <div class="actions">
+          <a class="btn" href="tel:2533852046">Call</a>
+          <a class="btn btn-primary" href="#booking">Book Appointment</a>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero" aria-label="Book dog grooming appointment">
+    <section class="hero">
       <div class="container">
-        <div class="hero-grid">
-          <div class="card hero-left">
-            <div>
-              <span class="pill">Full-service grooming</span>
-              <span class="pill">Poodles • Doodles • Drop coats</span>
+        <div class="hero-shell">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <div>
+                <span class="pill">Full-service grooming</span>
+                <span class="pill">Poodles • Doodles • Drop coats</span>
+              </div>
+
+              <p class="script">Greenwood Grooming</p>
+              <h1>Calm, detail-forward grooming that photographs beautifully.</h1>
+              <p class="lead">
+                Full service grooming: bath, blow-dry, de-shedding, de-matting (as needed), nails, ears, and finishing details.
+                We provide loving, individual attention—especially for anxious pups—and tailor every groom to coat type and lifestyle.
+              </p>
+
+              <div class="cta-row">
+                <a class="btn btn-primary" href="tel:2533852046">Call (253) 385-2046</a>
+                <a class="btn" href="sms:2533852046">Text to Schedule</a>
+                <a class="btn" href="#booking" style="background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.18); color:#fff;">Request Online</a>
+              </div>
             </div>
 
-            <h1>Top-tier grooming with a calm, professional approach.</h1>
-            <p class="sub">
-              Full service grooming for your dog: bath, blow-dry, de-shedding, de-matting, nails, ears, and finishing
-              details. We work carefully with anxious pups and tailor every groom to coat type and lifestyle.
-            </p>
+            <div class="hero-right">
+              <div id="booking" class="panel">
+                <h2>Book your appointment</h2>
+                <p>Call or text for the fastest scheduling. Prefer online? Send a request and we’ll confirm availability.</p>
+                <div class="phone">
+                  <span>📞 (253) 385-2046</span>
+                  <a class="btn btn-primary" href="tel:2533852046" style="padding:10px 12px;">Call Now</a>
+                </div>
 
-            <div class="cta-row">
-              <a class="btn btn-primary" href="tel:2533852046">Call (253) 385-2046</a>
-              <a class="btn btn-outline" href="sms:2533852046">Text to Schedule</a>
-              <a class="btn" href="#booking">Request Online</a>
-            </div>
+                <form action="https://formsubmit.co/mitrascarborough@gmail.com" method="POST">
+                  <input type="hidden" name="_subject" value="New Appointment Request — Greenwood Grooming" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_captcha" value="false" />
 
-            <div class="trust" aria-label="Highlights">
-              <span class="tag">Signature doodle clip</span>
-              <span class="tag">All breeds • all sizes</span>
-              <span class="tag">Detail-focused finish</span>
-              <span class="tag">Gentle handling</span>
+                  <div class="grid2">
+                    <div>
+                      <label for="name">Your name</label>
+                      <input id="name" name="Name" autocomplete="name" required placeholder="Full name" />
+                    </div>
+                    <div>
+                      <label for="phone">Phone</label>
+                      <input id="phone" name="Phone" inputmode="tel" required placeholder="(###) ###-####" />
+                    </div>
+                  </div>
+
+                  <div class="grid2">
+                    <div>
+                      <label for="pet">Dog / breed</label>
+                      <input id="pet" name="Dog / Breed" placeholder="Example: Goldendoodle" />
+                    </div>
+                    <div>
+                      <label for="service">Service</label>
+                      <select id="service" name="Service" required>
+                        <option value="" selected disabled>Select…</option>
+                        <option>Full Groom</option>
+                        <option>Bath & Brush</option>
+                        <option>De-shed / Coat Maintenance</option>
+                        <option>Signature Doodle Clip</option>
+                        <option>Nail Trim</option>
+                        <option>Show Grooming (by request)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <label for="notes">Notes</label>
+                  <textarea id="notes" name="Notes" placeholder="Coat condition, matting, temperament, preferred style, timing window…"></textarea>
+
+                  <button class="btn btn-primary" type="submit">Send Request</button>
+                  <p class="subnote">For quickest booking, call/text <a href="tel:2533852046">(253) 385-2046</a>.</p>
+                </form>
+              </div>
+
+              <div class="mini-ad" style="margin-top:12px" aria-label="Brand card">
+                <img src="assets/ad-card.png" alt="Greenwood Grooming ad card">
+              </div>
             </div>
           </div>
-
-          <!-- BOOKING CARD -->
-          <aside id="booking" class="card book" aria-label="Booking form">
-            <h2>Book your appointment</h2>
-            <p>
-              Call or text for the fastest scheduling. Prefer online? Send a request and we’ll confirm availability.
-            </p>
-
-            <div class="big-phone">
-              <span aria-hidden="true">📞</span>
-              <a href="tel:2533852046" style="font-weight:950;">(253) 385-2046</a>
-            </div>
-
-            <!-- FormSubmit: sends to mitrascarborough@gmail.com -->
-            <form action="https://formsubmit.co/mitrascarborough@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="New Appointment Request — Greenwood Grooming" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
-
-              <div class="grid2">
-                <div>
-                  <label for="name">Your Name</label>
-                  <input id="name" name="Name" autocomplete="name" required placeholder="Full name" />
-                </div>
-                <div>
-                  <label for="phone">Phone</label>
-                  <input id="phone" name="Phone" inputmode="tel" required placeholder="(###) ###-####" />
-                </div>
-              </div>
-
-              <div class="grid2">
-                <div>
-                  <label for="pet">Dog / Breed</label>
-                  <input id="pet" name="Dog / Breed" placeholder="Example: Standard Poodle" />
-                </div>
-                <div>
-                  <label for="service">Service</label>
-                  <select id="service" name="Service" required>
-                    <option value="" selected disabled>Select…</option>
-                    <option>Full Groom</option>
-                    <option>Bath & Brush</option>
-                    <option>De-shed / Coat Maintenance</option>
-                    <option>De-matting (assessment required)</option>
-                    <option>Nail Trim</option>
-                    <option>Daycare</option>
-                    <option>Boarding</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="grid2">
-                <div>
-                  <label for="timing">Preferred Timing</label>
-                  <select id="timing" name="Preferred Timing" required>
-                    <option value="" selected disabled>Select…</option>
-                    <option>ASAP</option>
-                    <option>This week</option>
-                    <option>Next week</option>
-                    <option>Flexible</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="contact">Best Contact Method</label>
-                  <select id="contact" name="Best Contact Method" required>
-                    <option value="" selected disabled>Select…</option>
-                    <option>Call me</option>
-                    <option>Text me</option>
-                    <option>Email me</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label for="notes">Notes</label>
-                <textarea id="notes" name="Notes" placeholder="Coat condition, matting, temperament, preferred style (e.g., signature doodle clip), daycare/boarding dates, etc."></textarea>
-              </div>
-
-              <button class="btn btn-primary" type="submit" style="width:100%; padding:14px;">
-                Send Request
-              </button>
-
-              <p class="help">
-                For quickest scheduling, call or text <a href="tel:2533852046" style="text-decoration:underline;">253-385-2046</a>.
-              </p>
-            </form>
-          </aside>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
     <section aria-label="Services">
       <div class="container">
         <div class="section-title">
           <h2>Services</h2>
-          <p>Professional grooming plus a safe, fully fenced, home-based setting for daycare and boarding.</p>
+          <p>High-quality grooming built around coat health, comfort, and a clean finish that holds up between visits.</p>
         </div>
 
         <div class="cards3">
-          <div class="service">
+          <div class="card">
             <h3>Full-Service Grooming</h3>
-            <p>Bath, blow-dry, brush-out, de-shedding, nails, ears, and a clean, balanced finish.</p>
+            <p>Grooming, blow-dry, de-shedding, de-matting (as needed), nails, ears, and finishing details.</p>
           </div>
-          <div class="service">
+          <div class="card">
+            <h3>Long-Haired & Drop Coats</h3>
+            <p>Controlled brushing and finishing for coats that need extra care to look their best.</p>
+          </div>
+          <div class="card">
             <h3>Signature Doodle Clip</h3>
-            <p>Purpose-built for poodle mixes: clean face work, tidy feet, and a polished silhouette.</p>
-          </div>
-          <div class="service">
-            <h3>Daycare & Boarding</h3>
-            <p>Home-based care in a fully fenced facility—your dog’s home away from home.</p>
+            <p>A polished doodle finish with tidy feet, balanced length, and clean face work.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SPECIALTIES -->
-    <section aria-label="Specialties">
+    <section aria-label="Photos">
       <div class="container">
         <div class="section-title">
-          <h2>Specialties</h2>
-          <p>We accept all breeds and sizes. Our most-requested coat types are long-haired (drop coated) dogs, poodles, and poodle mixes.</p>
+          <h2>Grooming photos</h2>
+          <p>Click to enlarge. For a premium look, use well-lit “after” photos with clean backgrounds.</p>
         </div>
 
-        <div class="cards3">
-          <div class="service">
-            <h3>Drop Coats</h3>
-            <p>Long-haired coats that need careful brushing, line work, and controlled finishing.</p>
+        <div class="photos">
+          <div class="shot" data-caption="Clean finish • Coat health" data-img="assets/photo-1.png">
+            <div class="frame"><img src="assets/photo-1.png" alt="Groomed dog photo" loading="lazy"></div>
+            <div class="cap">Clean finish • Coat health</div>
           </div>
-          <div class="service">
-            <h3>Poodles</h3>
-            <p>Clean scissoring, correct shaping, and coat prep that supports healthy growth.</p>
+
+          <div class="shot" data-caption="Calm handling • Happy pickup" data-img="assets/photo-2.png">
+            <div class="frame"><img src="assets/photo-2.png" alt="Happy dog photo" loading="lazy"></div>
+            <div class="cap">Calm handling • Happy pickup</div>
           </div>
-          <div class="service">
-            <h3>Anxious Pups</h3>
-            <p>Patient handling and individual attention, with a focus on comfort and trust.</p>
+
+          <div class="shot" data-caption="Replace with your best AFTER photo" data-img="assets/ad-card.png">
+            <div class="frame"><img src="assets/ad-card.png" alt="Greenwood Grooming brand card" loading="lazy"></div>
+            <div class="cap">Add a high-res “after” photo</div>
           </div>
         </div>
+
+        <div class="hint">Tip: swap /assets/photo-1.png, /assets/photo-2.png, and the third tile with your best groom “after” photos for the biggest perceived-quality lift.</div>
       </div>
     </section>
 
-    <!-- PHOTOS -->
-    <section aria-label="Professional grooming photos">
-      <div class="container">
-        <div class="section-title">
-          <h2>Grooming results</h2>
-          <p>Two sample images are included. Swap in your best “after” photos for the fastest credibility lift.</p>
-        </div>
-
-        <div class="gallery">
-          <figure class="shot">
-            <img src="assets/gallery-1.png" alt="Groomed dog photo example" loading="lazy">
-            <figcaption class="cap">Clean finish • Coat health</figcaption>
-          </figure>
-
-          <figure class="shot">
-            <img src="assets/gallery-2.png" alt="Happy dog photo example" loading="lazy">
-            <figcaption class="cap">Calm handling • Happy pickup</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section aria-label="Client reviews">
+    <section aria-label="Reviews">
       <div class="container">
         <div class="section-title">
           <h2>Client reviews</h2>
-          <p>Professional, detail-forward feedback that matches the kind of clients you want.</p>
+          <p>Short, specific, and quality-focused—exactly what premium clients respond to.</p>
         </div>
 
         <div class="quotes">
           <blockquote>
-            <p>“Best groom we’ve had—clean lines, even coat, and the face work was perfect. You can tell it’s done by someone who cares about detail.”</p>
+            <p>“Cleanest groom we’ve had. Even coat, perfect face work, and the finish looked great in photos.”</p>
             <footer>— Poodle mix owner</footer>
           </blockquote>
           <blockquote>
-            <p>“My dog is nervous with grooming and they handled him patiently. No rushing, no stress—just a professional result.”</p>
+            <p>“Our dog gets anxious and they handled him patiently. No rushing—just calm, professional grooming.”</p>
             <footer>— First-time client</footer>
           </blockquote>
           <blockquote>
-            <p>“We asked for a tidy doodle clip and it came out exactly right—balanced length, neat feet, and a great silhouette.”</p>
+            <p>“The doodle clip was exactly what we asked for: balanced length, tidy feet, and a polished silhouette.”</p>
             <footer>— Doodle owner</footer>
           </blockquote>
           <blockquote>
-            <p>“Coat looked healthy and clean, not overworked. Great communication and the finish held up well between visits.”</p>
+            <p>“Great communication and consistent quality. We keep coming back because the finish holds up.”</p>
             <footer>— Returning client</footer>
           </blockquote>
         </div>
       </div>
     </section>
 
-    <!-- FINAL CTA -->
-    <section aria-label="Call to schedule">
+    <section aria-label="Final CTA">
       <div class="container">
-        <div class="card" style="padding:18px;">
-          <div class="section-title" style="margin:0;">
-            <h2>Call or text to schedule</h2>
-            <p>Fast booking by phone. Online requests are confirmed as soon as possible.</p>
+        <div class="card" style="padding:18px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between">
+          <div>
+            <h2 style="margin:0 0 6px 0; font-size:20px;">Book by phone</h2>
+            <p style="margin:0; color:var(--muted); font-size:13px;">Call or text for the quickest scheduling.</p>
           </div>
-          <div class="cta-row" style="margin-top:10px;">
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
             <a class="btn btn-primary" href="tel:2533852046">Call (253) 385-2046</a>
-            <a class="btn btn-outline" href="sms:2533852046">Text to Schedule</a>
-            <a class="btn" href="#booking">Request Online</a>
+            <a class="btn" href="sms:2533852046">Text to Schedule</a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer role="contentinfo">
+    <footer>
       <div class="container">
         <div class="foot">
           <div>
-            <strong>Greenwood Grooming</strong><br/>
-            <small>Phone & Mobile: <a href="tel:2533852046" style="text-decoration:underline;">253-385-2046</a></small><br/>
-            <small><a href="https://www.facebook.com/profile.php?id=61574876862510" target="_blank" rel="noopener" style="text-decoration:underline;">Facebook</a></small>
+            <strong style="color:var(--ink)">Greenwood Grooming</strong><br>
+            <span>Pet Grooming • Show Grooming</span><br>
+            <span>Phone: <a href="tel:2533852046">(253) 385-2046</a></span>
           </div>
-          <small>© Greenwood Grooming</small>
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=61574876862510" target="_blank" rel="noopener">Facebook</a>
+          </div>
         </div>
       </div>
     </footer>
   </main>
 
-  <!-- Sticky booking bar (mobile) -->
-  <div class="sticky" aria-label="Mobile booking bar">
-    <div class="sticky-inner">
-      <a class="btn btn-primary" href="tel:2533852046">Call</a>
-      <a class="btn btn-outline" href="#booking">Book</a>
+  <!-- Lightbox -->
+  <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <div class="lb-inner">
+      <div class="lb-top">
+        <strong id="lbCap">Photo</strong>
+        <button class="x" id="lbClose" aria-label="Close">×</button>
+      </div>
+      <div class="lb-img"><img id="lbImg" src="" alt=""></div>
     </div>
   </div>
+
+  <!-- Sticky mobile bar -->
+  <div class="sticky">
+    <div class="sticky-inner">
+      <a class="btn btn-primary" href="tel:2533852046">Call</a>
+      <a class="btn" href="#booking">Book</a>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const lb = document.getElementById('lb');
+      const lbImg = document.getElementById('lbImg');
+      const lbCap = document.getElementById('lbCap');
+      const close = document.getElementById('lbClose');
+
+      function openLB(src, cap){
+        lbImg.src = src;
+        lbCap.textContent = cap || 'Photo';
+        lb.classList.add('open');
+      }
+      function closeLB(){
+        lb.classList.remove('open');
+        lbImg.src = '';
+      }
+
+      document.querySelectorAll('.shot').forEach(el => {
+        el.addEventListener('click', () => openLB(el.dataset.img, el.dataset.caption));
+      });
+
+      close.addEventListener('click', closeLB);
+      lb.addEventListener('click', (e) => { if(e.target === lb) closeLB(); });
+      document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLB(); });
+    })();
+  </script>
 </body>
 </html>
